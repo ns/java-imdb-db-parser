@@ -1,0 +1,15 @@
+== Java IMDB DB Parser
+
+This Java based parser outputs XML files based on IMDB plain text data files available at http://www.imdb.com/interfaces
+
+== Compile
+
+You'll need to edit Main.java and decide on what you want to output, movies.xml, actors.xml, or actresses.xml. Comment out the other parse lines and output lines.
+
+javac *.java
+
+== Run
+
+You'll need to set a high memory ceiling while the data is loaded into memory. I used something like this:
+
+java -Xms500m -Xmx3g test
